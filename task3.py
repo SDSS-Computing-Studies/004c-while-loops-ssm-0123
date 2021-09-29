@@ -19,3 +19,17 @@ Enter number:4
 That is an even integer
 
 """
+
+scan = True
+
+while scan :
+    Num = input("Enter number: ")
+    Num2 = Num
+    Num2 = float(Num2)
+    Num2 = round(Num2)
+    Num = float(Num)
+    if  Num == Num2 and Num%2 == 0 :
+        print("That is an even integer")
+        scan = False
+    else :
+        print("That is not an even integer")
