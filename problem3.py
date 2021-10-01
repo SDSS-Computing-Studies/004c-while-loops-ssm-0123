@@ -17,9 +17,11 @@ loop = True
 num = 1
 num2 = 1
 while loop : 
+    num3 = num + num2
     print(num, "",end='')
     print(num2, "",end='')
-    num = num
-    num2 = num
-    if num>100:
+    print(num3, "",end='')
+    num = num2 + num3
+    num2 = num3 + num
+    if num3>100:
         loop = False
